@@ -5,11 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- *UID-23BCA10444
- * Image-Guided Solar System Simulation
- * Modified to visually resemble image_0.png
- */
+/* Image-Guided Solar System Simulation*/
 public class ImageGuidedSolarSystemSimulation extends JFrame {
 
     public ImageGuidedSolarSystemSimulation() {
@@ -33,9 +29,8 @@ public class ImageGuidedSolarSystemSimulation extends JFrame {
     }
 }
 
-/**
- * Main rendering panel with double buffering and image-like aesthetics
- */
+/* Main rendering panel with double buffering and image-like aesthetics*/
+ 
 class SolarSystemPanel extends JPanel {
     private final List<Planet> planets = new ArrayList<>();
     private final List<Asteroid> asteroids = new ArrayList<>();
@@ -233,9 +228,7 @@ class SolarSystemPanel extends JPanel {
     public void toggleOrbits() { showOrbits = !showOrbits; }
 }
 
-/**
- * Planet thread with fixed method names and specific orbit properties
- */
+// Planet thread with fixed method names and specific orbit properties
 class Planet extends Thread {
     private final String name;
     private final Color color;
